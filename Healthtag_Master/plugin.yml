@@ -1,0 +1,8 @@
+name: HealthtagSPNVN
+main: NametagSV\PLayerName\Main
+api:
+ - 3.0.0
+ - 3.2.2
+version: 1.0
+author: BlackPMFury
+ #Teams: SPNVN Team.
