@@ -25,6 +25,8 @@ class Main extends PluginBase implements Listener{
     $player = $ev->getPlayer();
     $name = $player->getName();
     $heal = $player->getHealth();
+    $this->nt->set($name, ["Health" => $heal]);
+    $this->nt->save();
     $player->getNameTag($ev->setNametag("Health:". $heal));
   }
 }
