@@ -8,7 +8,7 @@ use pocketmine\command\CommandSender;
 use pocketmine\event\Listener;
 use pocketmine\{Player, Server};
 use pocketmine\event\player\PlayerJoinEvent;
-use pocketmine\untils\Config;
+use pocketmine\utils\Config;
 use jojoe7777\FormAPI;
 
 class Main extends PluginBase implements Listener{
@@ -17,8 +17,7 @@ class Main extends PluginBase implements Listener{
   
   public function onEnable(){
     $this->getServer()->getLogger()->info($this->tag . "Enable Plugin....");
-    $this->nt = new Config($this->getDataFolder() . "Nametag.yml", Config::YAML, []);
-    $this->nt->save();
+    $this->nt = new Config($this->getDataFolder() . "Namtag.yml", Config::YAML);
   }
   
   public function onJoin(PlayerJoinEvent $ev){
